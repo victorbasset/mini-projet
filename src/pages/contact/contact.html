@@ -8,9 +8,8 @@
 
 <ion-content>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item *ngFor="let user of peoples">
-        {{ user.age }}
-    </ion-item>
+    <button ion-button full *ngFor="let user of peopleService.peoples" (click)="showAlert()">
+        {{ user.name }}
+    </button>
   </ion-list>
 </ion-content>
